@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+    <text class="title">{{obj.abs+path[0]+obj.names}}</text>
+    <text class="title">{{"lala"+xx}}</text>
+    <text class="title">{{log?99:66}}</text>
+    <text class="title">{{n1+n2}}={{n1}}+{{n2}}</text>
+  <view class="classname" wx:for="{{array}}">
+  <text wx:for="{{array2}}" wx:for-item="da">
+<block class="inf" wx:if="{{item<=da}}">
+   {{item}}*{{da}}={{item*da}}  
+</block>
+   
+   </text>
+   </view>
+</view>
